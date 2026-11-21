@@ -132,13 +132,13 @@ def set_crowd_sad():
 def set_mom_sad():
     street_interior_house()
     char("mom", "sad", (0, 0, 0.4), rot=5, pose={"armL": -15, "armR": -15}, head_tilt=-8)
-    camera((0.3, -5.6, 4.75), (0.0, 0.0, 3.65), lens=35)
+    camera((0.3, -5.6, 4.85), (0.0, 0.0, 4.05), lens=35)
 
 
 def set_mayor_grin():
     office()
     char("mayor", "evilgrin", (0, 5.5, 0), pose={"armL": -50, "armR": -50})
-    camera((0.0, -0.5, 5.45), (0.0, 5.5, 4.55), lens=35)
+    camera((0.0, -1.3, 5.55), (0.0, 5.5, 4.85), lens=35)
 
 
 def set_mayor_desk():
@@ -158,19 +158,19 @@ def set_leo_close():
     town()
     char("leo", "content", (0, -11, 0.4), rot=8, pose={"armR": -95, "armR_side": 25})
     char("me", "neutral", (-3.4, -13.5, 0.4), rot=-60)
-    camera((-0.5, -16.2, 5.15), (0.0, -11.0, 4.15), lens=35)
+    camera((-0.5, -16.2, 5.25), (0.0, -11.0, 4.55), lens=35)
 
 
 def set_me_worried():
     town()
     char("me", "worried", (0, -11, 0.4), rot=-5, head_tilt=4)
-    camera((0.0, -15.6, 5.0), (0.0, -11.0, 4.25), lens=35)
+    camera((0.0, -15.6, 5.1), (0.0, -11.0, 4.65), lens=35)
 
 
 def set_me_grin():
     town()
     char("me", "evilgrin", (0, -11, 0.4), rot=0, head_tilt=-4)
-    camera((0.0, -15.4, 4.9), (0.0, -11.0, 4.25), lens=35)
+    camera((0.0, -15.4, 5.0), (0.0, -11.0, 4.65), lens=35)
 
 
 def set_police_arrive():
@@ -185,13 +185,13 @@ def set_police_arrive():
 def set_officer_close():
     town()
     char("officer", "angry", (0, -10, 0.4), rot=0, pose={"armR": -95, "armR_side": 5})
-    camera((0.4, -14.3, 5.05), (0.0, -10.0, 4.2), lens=35)
+    camera((0.4, -14.3, 5.15), (0.0, -10.0, 4.65), lens=35)
 
 
 def set_me_gasp():
     town()
     char("me", "gasp", (0, -11, 0.4), rot=0, pose={"armL": -150, "armR": -150, "armL_side": 25, "armR_side": 25})
-    camera((0.0, -15.4, 5.05), (0.0, -11.0, 4.25), lens=35)
+    camera((0.0, -15.4, 5.15), (0.0, -11.0, 4.65), lens=35)
 
 
 def set_office_wide():
@@ -206,7 +206,7 @@ def set_office_wide():
 def set_mayor_close():
     office()
     char("mayor", "evilgrin", (0, 5.5, 0), pose={"armL": -40, "armR": -40}, head_tilt=-6)
-    camera((0.3, 1.3, 5.45), (0.0, 5.5, 4.75), lens=35)
+    camera((0.3, 0.5, 5.55), (0.0, 5.5, 5.05), lens=35)
 
 
 def set_hat_pigeon():
@@ -221,7 +221,7 @@ def set_pigeon_poop():
     m = char("mayor", "shocked", (0, 5.5, 0), pose={"armL": -40, "armR": -40})
     r6.pigeon((0.2, 0.1, 2.73), rot=R(160), parent=m.head_pivot, scale=0.8)
     r6.poop((-0.3, -0.2, 2.73), parent=m.head_pivot, s=0.33)
-    camera((0.3, 0.2, 6.45), (0.0, 5.5, 5.25), lens=35)
+    camera((0.3, 0.2, 6.55), (0.0, 5.5, 6.0), lens=35)
 
 
 def set_officers_hold():
@@ -237,7 +237,7 @@ def set_mayor_laughs():
     m = char("mayor", "evilgrin", (0, 5.5, 0), pose={"armL": -140, "armR": -140, "armL_side": 30, "armR_side": 30},
              head_tilt=-12)
     r6.poop((-0.3, -0.2, 2.73), parent=m.head_pivot, s=0.33)
-    camera((0.3, -2.0, 5.45), (0.0, 5.5, 4.25), lens=30)
+    camera((0.3, -2.0, 5.55), (0.0, 5.5, 4.85), lens=30)
 
 
 def set_town_happy():
@@ -257,7 +257,7 @@ def set_me_sad_end():
     r6.sign((5, -4, 0), R(-10), [("CLOSED", 1.0, (0.8, 0.05, 0.05)), ("MONDAYS", 1.0, (0.8, 0.05, 0.05)),
                                 ("NO SMILING", 0.75, (0.1, 0.1, 0.1))], w=8, h=5, font=FONT)
     char("me", "sad", (0, -11, 0.4), rot=-8, head_tilt=-6)
-    camera((0.0, -15.5, 5.0), (0.0, -11.0, 4.25), lens=35)
+    camera((0.0, -15.5, 5.1), (0.0, -11.0, 4.65), lens=35)
 
 
 SETS = {k[4:]: v for k, v in globals().items() if k.startswith("set_")}
