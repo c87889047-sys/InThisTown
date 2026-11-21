@@ -1,0 +1,38 @@
+{
+  "title": "In This Town, Smiling Is Illegal",
+  "voices": {
+    "nar":     {"voice": "am_puck",   "speed": 1.0},
+    "leo":     {"voice": "am_echo",   "speed": 1.0},
+    "officer": {"voice": "am_onyx",   "speed": 0.95},
+    "mayor":   {"voice": "bm_george", "speed": 0.9}
+  },
+  "highlight": {
+    "illegal": "red", "smiling": "yellow", "smile": "yellow", "frown": "blue", "police": "blue",
+    "mayor": "red", "leo": "green", "joke": "green", "dino-snore!": "green", "thousand": "red",
+    "pigeon": "yellow", "pooped": "red", "laugh": "yellow", "laughed": "yellow", "legal": "green",
+    "mondays.": "red", "except": "red", "mom.": "purple", "nine!": "red", "face": "yellow"
+  },
+  "shots": [
+    {"id": "s01", "set": "town_wide",      "lines": [["nar", "In this town, smiling is illegal."]]},
+    {"id": "s02", "set": "officer_ticket", "lines": [["nar", "If you smile, the Frown Police give you a ticket."]]},
+    {"id": "s03", "set": "crowd_sad",      "lines": [["nar", "So everybody walks around looking like this."]]},
+    {"id": "s04", "set": "mom_sad",        "lines": [["nar", "Even my mom."]]},
+    {"id": "s05", "set": "mayor_grin",     "lines": [["nar", "The mayor made the law after somebody laughed at his giant top hat."]]},
+    {"id": "s06", "set": "mayor_desk",     "lines": [["nar", "Now he's the only person allowed to smile."]]},
+    {"id": "s07", "set": "me_leo",         "lines": [["nar", "But yesterday, my best friend Leo told me a joke."]]},
+    {"id": "s08", "set": "leo_close",      "lines": [["leo", "What do you call a sleeping dinosaur?"], ["leo", "A dino-SNORE!"]]},
+    {"id": "s09", "set": "me_worried",     "lines": [["nar", "I tried so hard not to smile."]]},
+    {"id": "s10", "set": "me_grin",        "lines": [["nar", "But my face did it anyway."]]},
+    {"id": "s11", "set": "police_arrive",  "lines": [["nar", "Five seconds later, the Frown Police showed up."]]},
+    {"id": "s12", "set": "officer_close",  "lines": [["officer", "Smiling in public. That's a thousand dollar fine."]]},
+    {"id": "s13", "set": "me_gasp",        "lines": [["nar", "I don't have a thousand dollars! I'm nine!"]]},
+    {"id": "s14", "set": "office_wide",    "lines": [["nar", "So they took me straight to the mayor."]]},
+    {"id": "s15", "set": "mayor_close",    "lines": [["mayor", "Nobody smiles in my town. Except me."]]},
+    {"id": "s16", "set": "hat_pigeon",     "lines": [["nar", "But then I saw something moving in his hat."]]},
+    {"id": "s17", "set": "pigeon_poop",    "lines": [["nar", "A pigeon jumped out and pooped right on his head."]]},
+    {"id": "s18", "set": "officers_hold",  "lines": [["nar", "Everyone tried so hard not to laugh."]]},
+    {"id": "s19", "set": "mayor_laughs",   "lines": [["nar", "But the mayor laughed first."]]},
+    {"id": "s20", "set": "town_happy",     "lines": [["nar", "And that's how smiling became legal again."]]},
+    {"id": "s21", "set": "me_sad_end",     "lines": [["nar", "Except on Mondays."]]}
+  ]
+}
